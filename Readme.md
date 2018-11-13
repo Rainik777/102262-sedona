@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Рейн](https://up.htmlacademy.ru/htmlcss/23/user/102262).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
