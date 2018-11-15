@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
+}
+
+html {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
