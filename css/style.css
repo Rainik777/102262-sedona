@@ -1,8 +1,21 @@
+/* Позиционирование */
+/* Блочная модель */
+/* Типографика */
+/* Оформление */
+/* Анимация */
+/* Разное */
+
 @font-face {
   font-family: "PT Sans";
   src: url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
 }
 
 html {
+  /* Позиционирование */
+  /* Блочная модель */
+  /* Типографика */
   font-family: "PT Sans", "Arial", sans-serif;
+  /* Оформление */
+  /* Анимация */
+  /* Разное */
 }
