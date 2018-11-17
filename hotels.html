@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отели</title>
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- STYLESHEET END -->
+    
+  </head>
+  <body>
+  
+    <!-- CONTENT -->
+    
+    <header>
+      
+      <!-- LOGO -->
+      <a href="index.html" title="Переход на главную"><img src="http://placehold.it/138x71.png&text=logo" width="138" height="71" alt="Герб города"></a>
+      <!-- LOGO END -->
+      
+      <!-- MAIN NAVIGATION -->
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html" title="Переход на главную">Информация</a></li>
+            <li><a href="fotoandvideo.html" title="Ссылка на страницу с фото и видео">Фото и видео</a></li>
+            <li><a href="statemap.html" title="Ссылка на страницу с картой штата">Карта штата</a></li>
+            <li><a class="current" title="Ссылка на страницу с подбором гостиниц">Гостиницы</a></li>
+          </ul>
+        </nav>
+      <!-- MAIN NAVIGATION END -->
+    
+    </header>
+    
+    <main>
+      <h1 class="visuali-hidden">Поиск гостиниц в Седоне</h1>
+      
+      <!-- SEARCH -->
+      <section class="search-form">
+        <h2 class="visualy hidden">Параметры поиска</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+        <!-- Здесь будет форма, чуть позже -->
+        <!-- Здесь будет форма, чуть позже -->
+        <!-- Здесь будет форма, чуть позже -->
+        <!-- Здесь будет форма, чуть позже -->
+        <!-- Здесь будет форма, чуть позже -->
+        </form>
+      </section>
+      <!-- SEARCH END -->
+      
+      <!-- SEARCH SORT -->
+      <section class="search-sort">
+        <h2 class="visualy-hidden">Сортировка найденного</h2>
+        <p>Найдено: <span class="ammount">3</span></p>
+        <ul class="sort-type">
+          <li class="sort-item current"><a href="#" title="Сортировка по цене">По цене</a></li>
+          <li class="sort-item"><a href="#" title="Сортировка по типу">По типу</a></li>
+          <li class="sort-item"><a href="#" title="Сортировка по рейтингу">По рейтингу</a></li>
+        </ul>
+          <span><a href="#" title="Отсортировать по возрастанию">По возрастанию</a></span>
+          <span><a href="#" title="Отсортировать по убыванию">По убыванию</a></span>
+      </section>
+      <!-- SEARCH SORT END -->
+      
+      <!-- RESULT -->
+      <section class="result">
+        <h2 class="visualy-hidden">Найденные отели Седоны</h2>
+        
+        <div class="nothing-found display-none">
+          <span>Извините!</span>
+          <p>К сожалению по Вашим параметрам мы не смогли ничего подобрать!</p>
+          <p>Попробуйте быть скромнее...</p>
+        </div>
+        
+        <ul class="result-list">
+          <li class="result-item">
+            <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Отель Amara Resort & SPA">
+            <h3 class="result-title">Amara Resort $ SPA</h3>
+            <table class="result-price-table">
+              <tr>
+                <td class="result-type">Гостиница</td>
+                <td class="result-price">От 4 000 р.</td>
+              </tr>
+            </table>
+            <a href="#" title="Подробнее о Amara Resort $ SPA">Подробнее</a>
+            <a href="#" title="Забронировать о Amara Resort $ SPA">Забронировать</a>
+            <span class="result-stars">4</span>
+            <p class="result-rayting">Рейтинг: <span class="result-rayting-sum">8,5</span></p>
+          </li>
+          <li class="result-item">
+          <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Мотель Desert Quail Inn">
+            <h3 class="result-title">Desert Quail Inn</h3>
+            <table class="result-price-table">
+              <tr>
+                <td class="result-type">Мотель</td>
+                <td class="result-price">От 3 000 р.</td>
+              </tr>
+            </table>
+            <a href="#" title="Подробнее о Desert Quail Inn">Подробнее</a>
+            <a href="#" title="Забронировать о Desert Quail Inn">Забронировать</a>
+            <span class="result-stars">3</span>
+            <p class="result-rayting">Рейтинг: <span class="result-rayting-sum">8,9</span></p>
+          </li>
+          <li class="result-item">
+          <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+            <h3 class="result-title">Villas at Poco Diablo</h3>
+            <table class="result-price-table">
+              <tr>
+                <td class="result-type">Аппартаменты</td>
+                <td class="result-price">От 2 000 р.</td>
+              </tr>
+            </table>
+            <a href="#" title="Подробнее о Villas at Poco Diablo">Подробнее</a>
+            <a href="#" title="Забронировать о Villas at Poco Diablo">Забронировать</a>
+            <span class="result-stars">2</span>
+            <p class="result-rayting">Рейтинг: <span class="result-rayting-sum">9,2</span></p>
+          </li>
+        </ul>
+      </section>
+      <!-- RESULT END -->
+      
+    </main>
+    
+    <footer>
+      
+      <!-- FOOTER HASHTAG -->
+      <span class="footer-hashtag">#Visitsedona</span>
+      <!-- FOOTER HASHTAG END -->
+      
+      <!-- SOCIAL -->
+      <ul class="social">
+        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Twitter</a></li>
+        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Facebook</a></li>
+        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Youtube</a></li>
+      </ul>
+      <!-- SOCIAL END -->
+      
+      <!-- COPYRIGHT -->
+      <span class="footer-copyright">Website by</span>
+      <a href="http://htmlacademy.ru/intensive/htmlcss" title="Сайт разработан HTMLAcademy" target="_blank"><img src="http://placehold.it/115x41.png&text=logo+HTMLAcademy" width="115" height="41" alt="Логотип HTMLAcademy"></a>
+      <!-- COPYRIGHT END -->
+      
+    </footer>
+    
+    <!-- CONTENT END -->
+    
+  </body>
+</html> 
