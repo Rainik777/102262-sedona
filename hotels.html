@@ -40,11 +40,28 @@
       <section class="search-form">
         <h2 class="visualy hidden">Параметры поиска</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-        <!-- Здесь будет форма, чуть позже -->
-        <!-- Здесь будет форма, чуть позже -->
-        <!-- Здесь будет форма, чуть позже -->
-        <!-- Здесь будет форма, чуть позже -->
-        <!-- Здесь будет форма, чуть позже -->
+          <fieldset class="search-infrastructure">
+            <legend>Инфраструктура:</legend>
+            <label for="pool" title="Наличие бассейна"><input id="pool" type="checkbox">Бассейн</label>
+            <label for="parking" title="Наличие парковки"><input id="parking" type="checkbox">Парковка</label>
+            <label for="wifi" title="Наличие Wi-Fi"><input id="wifi" type="checkbox">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="search-housing-type">
+            <legend>Тип жилья:</legend>
+            <label for="hotel"><input id="hotel" type="checkbox">Гостиница</label>
+            <label for="motel"><input id="motel" type="checkbox">Мотель</label>
+            <label for="appartment"><input id="appartment" type="checkbox">Апартаменты</label>
+          </fieldset>
+          <fieldset type="search-price">
+            <legend>Стоимость в сутки (Р):</legend>
+            <p>
+              <input type="text" id="pricemin" value="от 0" title="Стоимость в сутки от" onchange="rangemin.value=pricemin.value">
+              <input type="text" id="pricemax" value="до 5000" title="Стоимость в сутки до" onchange="rangemax.value=pricemax.value">
+            </p>
+            <input type="range" id="rangemin" min="0" max="5000" step="1" value="0" onchange="pricemin.value=rangemin.value">
+            <input type="range" id="rangemax" min="0" max="5000" step="1" value="4000" onchange="pricemax.value=rangemax.value">
+          </fieldset>
+          <button type="submit" class="form-show button">Показать</button>
         </form>
       </section>
       <!-- SEARCH END -->
