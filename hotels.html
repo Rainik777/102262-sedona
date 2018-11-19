@@ -56,12 +56,14 @@
           <p>Найдено: <span class="ammount">3</span></p>
         </div>
         <ul class="sort-type">
-          <li class="sort-item current"><a href="#" title="Сортировка по цене">По цене</a></li>
+          <li class="sort-item sort-current"><a href="#" title="Сортировка по цене">По цене</a></li>
           <li class="sort-item"><a href="#" title="Сортировка по типу">По типу</a></li>
           <li class="sort-item"><a href="#" title="Сортировка по рейтингу">По рейтингу</a></li>
         </ul>
-          <span><a href="#" title="Отсортировать по возрастанию">По возрастанию</a></span>
-          <span><a href="#" title="Отсортировать по убыванию">По убыванию</a></span>
+        <ul class="sort-order">
+          <li class="sort-order-item"><a href="#" title="Отсортировать по возрастанию">По возрастанию</a></li>
+          <li class="sort-order-item sort-current"><a href="#" title="Отсортировать по убыванию">По убыванию</a></li>
+        </ul>
       </section>
       <!-- SEARCH SORT END -->
       
@@ -75,50 +77,52 @@
           <p>Попробуйте быть скромнее...</p>
         </div>
         
-        <ul class="result-list">
-          <li class="result-item">
-            <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Отель Amara Resort & SPA">
-            <h3 class="result-title">Amara Resort $ SPA</h3>
-            <table class="result-price-table">
-              <tr>
-                <td class="result-type">Гостиница</td>
-                <td class="result-price">От 4 000 р.</td>
-              </tr>
-            </table>
-            <a href="#" title="Подробнее о Amara Resort $ SPA">Подробнее</a>
-            <a href="#" title="Забронировать о Amara Resort $ SPA">Забронировать</a>
-            <span class="result-stars">4</span>
-            <p class="result-rayting">Рейтинг: <span class="result-rayting-sum">8,5</span></p>
-          </li>
-          <li class="result-item">
-          <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Мотель Desert Quail Inn">
-            <h3 class="result-title">Desert Quail Inn</h3>
-            <table class="result-price-table">
-              <tr>
-                <td class="result-type">Мотель</td>
-                <td class="result-price">От 3 000 р.</td>
-              </tr>
-            </table>
-            <a href="#" title="Подробнее о Desert Quail Inn">Подробнее</a>
-            <a href="#" title="Забронировать о Desert Quail Inn">Забронировать</a>
-            <span class="result-stars">3</span>
-            <p class="result-rayting">Рейтинг: <span class="result-rayting-sum">8,9</span></p>
-          </li>
-          <li class="result-item">
-          <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-            <h3 class="result-title">Villas at Poco Diablo</h3>
-            <table class="result-price-table">
-              <tr>
-                <td class="result-type">Аппартаменты</td>
-                <td class="result-price">От 2 000 р.</td>
-              </tr>
-            </table>
-            <a href="#" title="Подробнее о Villas at Poco Diablo">Подробнее</a>
-            <a href="#" title="Забронировать о Villas at Poco Diablo">Забронировать</a>
-            <span class="result-stars">2</span>
-            <p class="result-rayting">Рейтинг: <span class="result-rayting-sum">9,2</span></p>
-          </li>
-        </ul>
+        <div>
+          <ul class="result-list">
+            <li class="result-item">
+              <article>
+                <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Отель Amara Resort & SPA">
+                <h1 class="result-title"><a href="#" ttitle="Переход на страницу Amara Resort $ SPA">Amara Resort $ SPA</a></h1>
+                <span class="result-type">Гостиница</span>
+                <span class="result-price">От 4 000 р.</span>
+                <a href="#" title="Подробнее о Amara Resort $ SPA">Подробнее</a>
+                <a href="#" title="Забронировать о Amara Resort $ SPA">Забронировать</a>
+                <span class="result-stars">4</span>
+                <div class="rating">
+                  <p class="result-rating">Рейтинг: <span class="result-rating-sum">8,5</span></p>
+                </div>
+              </article>
+            </li>
+            <li class="result-item">
+              <article>
+                <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Мотель Desert Quail Inn">
+                <h1 class="result-title"><a href="#" ttitle="Переход на страницу Desert Quail Inn">Desert Quail Inn</a></h1>
+                <span class="result-type">Мотель</span>
+                <span class="result-price">От 3 000 р.</span>
+                <a href="#" title="Подробнее о Desert Quail Inn">Подробнее</a>
+                <a href="#" title="Забронировать о Desert Quail Inn">Забронировать</a>
+                <span class="result-stars">3</span>
+                <div class="rating">
+                  <p class="result-rating">Рейтинг: <span class="result-rating-sum">8,9</span></p>
+                </div>
+              </article>
+            </li>
+            <li class="result-item">
+              <article>
+                <img src="http://placehold.it/135x90.png&text=HOTEL" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+                <h1 class="result-title"><a href="#" ttitle="Переход на страницу Villas at Poco Diablo">Villas at Poco Diablo</a></h1>
+                <span class="result-type">Аппартаменты</span>
+                <span class="result-price">От 2 000 р.</span>
+                <a href="#" title="Подробнее о Villas at Poco Diablo">Подробнее</a>
+                <a href="#" title="Забронировать о Villas at Poco Diablo">Забронировать</a>
+                <span class="result-stars">2</span>
+                <div class="rating">
+                  <p class="result-rating">Рейтинг: <span class="result-rating-sum">9,2</span></p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- RESULT END -->
       
@@ -127,7 +131,9 @@
     <footer class="main-footer">
       
       <!-- FOOTER HASHTAG -->
-      <span class="footer-hashtag">#Visitsedona</span>
+      <div>
+        <span class="footer-hashtag">#Visitsedona</span>
+      </div>
       <!-- FOOTER HASHTAG END -->
       
       <!-- SOCIAL -->
