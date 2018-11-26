@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>Отели</title>
     
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- STYLESHEET END -->
+    <!-- STYLESHEET AND -FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- STYLESHEET AND FONTS END -->
     
   </head>
   <body>
@@ -17,7 +18,7 @@
     <header class="main-header">
       
       <!-- LOGO -->
-      <a href="index.html" title="Переход на главную"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
+      <a href="index.html" title="Переход на главную" aria-label="Переход на главную страницу"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
       <!-- LOGO END -->
       
       <!-- MAIN NAVIGATION -->
@@ -42,24 +43,31 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="search-infrastructure">
             <legend>Инфраструктура:</legend>
-            <label for="pool" title="Наличие бассейна"><input id="pool" type="checkbox">Бассейн</label>
-            <label for="parking" title="Наличие парковки"><input id="parking" type="checkbox">Парковка</label>
-            <label for="wifi" title="Наличие Wi-Fi"><input id="wifi" type="checkbox">Wi-Fi</label>
+            <label for="pool" title="Наличие бассейна"><input id="pool" type="checkbox" name="pool">Бассейн</label>
+            <label for="parking" title="Наличие парковки"><input id="parking" type="checkbox" name="parking">Парковка</label>
+            <label for="wifi" title="Наличие Wi-Fi"><input id="wifi" type="checkbox" name="wifi">Wi-Fi</label>
           </fieldset>
           <fieldset class="search-housing-type">
             <legend>Тип жилья:</legend>
-            <label for="hotel"><input id="hotel" type="checkbox">Гостиница</label>
-            <label for="motel"><input id="motel" type="checkbox">Мотель</label>
-            <label for="appartment"><input id="appartment" type="checkbox">Апартаменты</label>
+            <label for="hotel"><input id="hotel" type="checkbox" name="hotel">Гостиница</label>
+            <label for="motel"><input id="motel" type="checkbox" name="motel">Мотель</label>
+            <label for="appartment"><input id="appartment" type="checkbox" name="appartment">Апартаменты</label>
           </fieldset>
-          <fieldset type="search-price">
+          <fieldset class="search-price">
             <legend>Стоимость в сутки (Р):</legend>
             <p>
-              <input type="text" id="pricemin" value="от 0" title="Стоимость в сутки от" onchange="rangemin.value=pricemin.value">
-              <input type="text" id="pricemax" value="до 5000" title="Стоимость в сутки до" onchange="rangemax.value=pricemax.value">
+              <input type="number" id="pricemin" placeholder="от 0" title="Стоимость в сутки от" name="pricemin" max="5000" aria-label="Минимальная стоимость в сутки">
+              <input type="number" id="pricemax" placeholder="до 5000" title="Стоимость в сутки до" name="pricemax" max="5000" aria-label="Максимальная стоимость в сутки">
             </p>
+            
+            <p class="search-range-immitation">
+              <button class="button search-minprice" type="button">Минимальная цена</button>
+              <button class="button search-maxprice" type="button">Максимальая цена</button>
+            </p>            
+            <!--
             <input type="range" id="rangemin" min="0" max="5000" step="1" value="0" onchange="pricemin.value=rangemin.value">
             <input type="range" id="rangemax" min="0" max="5000" step="1" value="4000" onchange="pricemax.value=rangemax.value">
+            -->
           </fieldset>
           <button type="submit" class="form-show button">Показать</button>
         </form>
@@ -155,16 +163,16 @@
       
       <!-- SOCIAL -->
       <ul class="social">
-        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Twitter</a></li>
-        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Facebook</a></li>
-        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Youtube</a></li>
+        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Мы в Twitter</a></li>
+        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Мы в Facebook</a></li>
+        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Мы в Youtube</a></li>
       </ul>
       <!-- SOCIAL END -->
       
       <!-- COPYRIGHT -->
       <div class="copyright">
         <span class="footer-copyright">Website by</span>
-        <a href="http://htmlacademy.ru/intensive/htmlcss" title="Сайт разработан HTMLAcademy" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
+        <a href="http://htmlacademy.ru/intensive/htmlcss" title="Сайт разработан HTMLAcademy" target="_blank" aria-label="Переход на страницу разработчика HTMLAcademy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
       </div>
       <!-- COPYRIGHT END -->
       

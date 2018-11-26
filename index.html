@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Отели</title>
     
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- STYLESHEETS END -->
+    <!-- STYLESHEET AND -FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- STYLESHEET AND FONTS END -->
     
   </head>
   <body>
@@ -96,29 +97,29 @@
       <!-- SEARCH -->
       <section class="hotel-search">
         <h2 class="visualy-hidden">Поиск гостиницы в Седоне</h2>
-        <p> class="hotel-search-slogan">Заинтересовались?</p>
+        <p class="hotel-search-slogan">Заинтересовались?</p>
         <p class="hotel-search-summary">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" title="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</a>
         <form method="post" action="https://echo.htmlacademy.ru">
           <p>
             <label for="arrival">Дата заезда:</label>
-            <input type="date" value="2017-04-27" id="arrival" required>
+            <input type="date" value="2017-04-27" id="arrival" name="arrival" required>
           </p>
           <p>
             <label for="departure">Дата выезда:</label>
-            <input type="date" value="2017-07-04" id="departure">
+            <input type="date" value="2017-07-04" id="departure" name="departure">
           </p>
           <p>
             <label for="adultammount">Взрослые:</label>
-            <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника">-</button>
-            <input type="number" placeholder="2" min="1" id="adultammount" required>
-            <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника">+</button>
+            <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника" aria-label="Убрать путешественника">-</button>
+            <input type="number" placeholder="2" min="1" id="adultammount" name="adultammount"  aria-label="Количество путешественников" required>
+            <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника" aria-label="Добавить путешественника">+</button>
           </p>
           <p>
             <label for="childammount">Дети:</label>
-            <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника">-</button>
-            <input type="number" placeholder="0" min="0" id="childammount">
-            <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника">+</button>
+            <button type="button" class="hotel-search-ammount-minus" title="Убрать ребенка-путешественника" aria-label="Убрать ребенка-путешественника">-</button>
+            <input type="number" value="0" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
+            <button type="button" class="hotel-search-ammount-plus" title="Добавить ребенка-путешественника" aria-label="Добавить ребенка-путешественника">+</button>
           </p>
           <button type="submit" class="form-search button">Найти</button>
         </form>
@@ -147,16 +148,16 @@
       
       <!-- SOCIAL -->
       <ul class="social">
-        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Twitter</a></li>
-        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Facebook</a></li>
-        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Youtube</a></li>
+        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Мы в Twitter</a></li>
+        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Мы в Facebook</a></li>
+        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Мы в Youtube</a></li>
       </ul>
       <!-- SOCIAL END -->
       
       <!-- COPYRIGHT -->
       <div class="copyright">
         <span class="footer-copyright">Website by</span>
-        <a href="http://htmlacademy.ru/intensive/htmlcss" title="Сайт разработан HTMLAcademy" target="_blank"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
+        <a href="http://htmlacademy.ru/intensive/htmlcss" title="Сайт разработан HTMLAcademy" target="_blank" aria-label="Переход на страницу разработчика HTMLAcademy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
       </div>
       <!-- COPYRIGHT END -->
       
