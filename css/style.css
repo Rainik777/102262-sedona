@@ -790,7 +790,7 @@ a.up:active::after {
   /* --- Разное --- */
 }
 
-article h1 a {
+.result-title a {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
   /* --- Типографика --- */
@@ -799,12 +799,13 @@ article h1 a {
   line-height: 26px;
   color: #000000;
   /* --- Оформление --- */
+  outline: none;
   /* --- Анимация --- */
   /* --- Разное --- */
 }
 
-article h1 a:hover,
-article h1 a:focus {
+.result-title a:hover,
+.result-title a:focus {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
   /* --- Типографика --- */
@@ -814,7 +815,7 @@ article h1 a:focus {
   /* --- Разное --- */
 }
 
-article h1 a:active {
+.result-title a:active {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
   /* --- Типографика --- */
