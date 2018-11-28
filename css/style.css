@@ -517,7 +517,7 @@ input[type="number"]:focus {
   /* --- Типографика --- */
   /* --- Оформление --- */
   background-color: #5d5c5d;
-  background-image: url();
+  background-image: url(../img/bg-welcome-blur.jpg);
   background-repeat: no-repeat;
   /* --- Анимация --- */
   /* --- Разное --- */
@@ -620,6 +620,18 @@ fieldset {
   border-radius: 2px;
   /* --- Анимация --- */
   /* --- Разное --- */
+}
+
+.nothing-found {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
 }
 
 .found-ammount {
