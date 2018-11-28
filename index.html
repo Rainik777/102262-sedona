@@ -18,7 +18,7 @@
     <header class="main-header">
       
       <!-- LOGO -->
-        <a title="Герб города"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
+        <a class="city-logo" title="Герб города"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
       <!-- LOGO END -->
       
       <!-- MAIN NAVIGATION -->
@@ -103,24 +103,24 @@
       </section>
       <section class="search-form">
         <form method="post" action="https://echo.htmlacademy.ru">
-          <p>
+          <p class="form-item">
             <label for="arrival">Дата заезда:</label>
-            <input type="date" value="2017-04-27" id="arrival" name="arrival" required>
+            <input type="text" placeholder="24 апреля 2017" id="arrival" name="arrival" required>
           </p>
-          <p>
+          <p class="form-item">
             <label for="departure">Дата выезда:</label>
-            <input type="date" value="2017-07-04" id="departure" name="departure">
+            <input type="text" placeholder="4 июля 2017" id="departure" name="departure">
           </p>
-          <p>
+          <p class="form-item">
             <label for="adultammount">Взрослые:</label>
             <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника" aria-label="Убрать путешественника">-</button>
             <input type="number" placeholder="2" min="1" id="adultammount" name="adultammount"  aria-label="Количество путешественников" required>
             <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника" aria-label="Добавить путешественника">+</button>
           </p>
-          <p>
+          <p class="form-item">
             <label for="childammount">Дети:</label>
             <button type="button" class="hotel-search-ammount-minus" title="Убрать ребенка-путешественника" aria-label="Убрать ребенка-путешественника">-</button>
-            <input type="number" value="0" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
+            <input type="number" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
             <button type="button" class="hotel-search-ammount-plus" title="Добавить ребенка-путешественника" aria-label="Добавить ребенка-путешественника">+</button>
           </p>
           <button type="submit" class="form-search-button">Найти</button>

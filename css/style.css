@@ -8,7 +8,7 @@
 body {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
-  margin: 0; --- 
+  margin: 0; 
   padding: 0;
   /* --- Типографика --- */
   font-family: "PT Sans", "Arial", sans-serif;
@@ -70,6 +70,7 @@ a {
   /* --- Блочная модель --- */
   /* --- Типографика --- */
   /* --- Оформление --- */
+  outline: none;
   color: #81b3d2;
   /* --- Анимация --- */
   /* --- Разное --- */
@@ -90,7 +91,7 @@ a {
 /* --- ??? ---*/
 /* --- ??? ---*/
 
-.site-navigation a .current {
+.site-navigation a.current {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
   /* --- Типографика --- */
@@ -276,6 +277,7 @@ a {
   /* --- Типографика --- */
   font-size: 21px;
   line-height: 26px;
+  vertical-align: middle;
   /* --- Оформление --- */
   color: #ffffff;
   background-color: #766357;
@@ -289,6 +291,7 @@ a {
   /* --- Блочная модель --- */
   /* --- Типографика --- */
   /* --- Оформление --- */
+  outline: none;
   background-color: #604e43;
   /* --- Анимация --- */
   /* --- Разное --- */
@@ -311,8 +314,121 @@ a {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
   /* --- Типографика --- */
+  text-align: center;
   /* --- Оформление --- */
   background-color: #ffffff;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.form-item input {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font: inherit;
+  /* --- Оформление --- */
+  background-color: #f2f2f2;
+  border: none;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.form-item input[type="number"]::-webkit-input-placeholder {
+  text-align: center;
+  color: #000000;
+}
+.form-item input[type="number"]::-moz-placeholder {
+  text-align: center;
+  color: #000000;
+}
+.form-item input[type="number"]:-ms-input-placeholder {
+  text-align: center;
+  color: #000000;
+}
+.form-item input[type="number"]:-moz-placeholder {
+  text-align: center;
+  color: #000000;
+}
+
+.form-item input[type="text"]::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+.form-item input[type="text"]::-moz-placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+.form-item input[type="text"]:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+.form-item input[type="text"]:-moz-placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-item input:hover {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: #ebebeb;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.form-item input:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  outline: none;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.hotel-search-ammount-minus,
+.hotel-search-ammount-plus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-family: inherit;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  /* --- Оформление --- */
+  border: none;
+  background-color: #f2f2f2;
+  color: #a9a9a9;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.hotel-search-ammount-minus:hover,
+.hotel-search-ammount-plus:hover,
+.hotel-search-ammount-minus:focus,
+.hotel-search-ammount-plus:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  outline: none;
+  color: #000000;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.hotel-search-ammount-minus:active,
+.hotel-search-ammount-plus:active {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  color: #81b3d2;
   /* --- Анимация --- */
   /* --- Разное --- */
 }
@@ -325,6 +441,8 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
   /* --- Оформление --- */
   border: none;
   background-color: #81b3d2;
@@ -343,6 +461,7 @@ a {
   line-height: 26px;
   font-weight: 700;
   /* --- Оформление --- */
+  outline: none;
   border: none;
   background-color: #669ec0;
   color: #ffffff;
@@ -350,7 +469,7 @@ a {
   /* --- Разное --- */
 }
 
-.form-search-button:focus {
+.form-search-button:active {
   /* --- Позиционирование --- */
   /* --- Блочная модель --- */
   /* --- Типографика --- */
@@ -366,4 +485,573 @@ a {
   /* --- Разное --- */
 }
 
+/* ----------- УБРАТЬ ВИЗУАЛЬНЫЙ КОНТРОЛ У ИНПУТОВ ----------- */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+/* ----------- УБРАТЬ ВИЗУАЛЬНЫЙ КОНТРОЛ У ИНПУТОВ ----------- */
+
+
+
 /* ----------- SEARCH FORM END ----------- */
+
+
+/* ----------- HOTELS ----------- */ /* ----------- HOTELS ----------- */
+
+.inner-main {
+  background-color: #ffffff;
+}
+
+.search-form {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: #5d5c5d;
+  background-image: url();
+  background-repeat: no-repeat;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+fieldset {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #ffffff;
+  text-align: left;
+  /* --- Оформление --- */
+  border: none;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.search-form label {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-weight: 400;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.search-price input[type="number"] {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #ffffff;
+  /* --- Оформление --- */
+  border: none;
+  background-color: transparent;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.search-price-input {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.search-price input[type="number"]::-webkit-input-placeholder {
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.search-price input[type="number"]::-moz-placeholder {
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.search-price input[type="number"]:-ms-input-placeholder {
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.search-price input[type="number"]:-moz-placeholder {
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.search-form button[type="submit"] {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  /* --- Оформление --- */
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.search-form button[type="submit"]:hover,
+.search-form button[type="submit"]:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #000000;
+  /* --- Оформление --- */
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.found-ammount {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  text-align: center;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */  
+}
+
+.found-ammount p {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 21px;
+  line-height: 26px;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */  
+}
+
+.search-sort li {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 12px;
+  line-height: 18px;
+  /* --- Оформление --- */
+  list-style: none;
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
+}
+
+.sort-type a {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-weight: 400;
+  color: #cacaca;
+  /* --- Оформление --- */
+  outline: none;
+  border-bottom: 1px dotted #81b3d2;
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
+}
+
+.sort-type a.current {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-weight: 400;
+  color: #81b3d2;
+  /* --- Оформление --- */
+  border-bottom: none;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.sort-type a:hover,
+.sort-type a:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-weight: 400;
+  color: #81b3d2;
+  /* --- Оформление --- */
+  border-bottom: 1px dotted #81b3d2;
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
+}
+
+.sort-type a:active {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-weight: 400;
+  color: #000000;
+  /* --- Оформление --- */
+  border-bottom: none;
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
+}
+
+.sort-order a {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 0;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
+}
+
+.sort-order a.current::after {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #81b3d2;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */ 
+}
+
+a.down::after {
+  content: '▼';
+  color: #cacaca;
+  font-size: 14px;
+}
+
+a.up::after {
+  content: '▲';
+  color: #cacaca;
+  font-size: 14px;
+}
+
+a.down:hover::after,
+a.down:focus::after {
+  color: #000000;
+}
+
+a.up:hover::after,
+a.up:focus::after {
+  color: #000000;
+}
+
+a.down:active::after {
+  color: #81b3d2;
+}
+
+a.up:active::after {
+  color: #81b3d2;
+}
+
+.result-item {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item:first-child {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  list-style: none;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+article h1 a {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+article h1 a:hover,
+article h1 a:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #81b3d2;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+article h1 a:active {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #cacaca;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .result-type,
+.result-item .result-price {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .button {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #ffffff;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .more {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: #81b3d2;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .more:hover,
+.result-item .more:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: #669ec0;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .more:active {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #94b9d2;
+  /* --- Оформление --- */
+  background-color: #5496bd;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .book {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: #766357;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .book:hover,
+.result-item .book:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: #604e43;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-item .book:active {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  color: #928a85;
+  /* --- Оформление --- */
+  background-color: #503e33;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.result-stars {
+  font-size: 0;
+  color: #81b3d2;
+}
+
+.result-stars-1::after{
+  content: '★';
+  font-size: 20px;
+}
+
+.result-stars-2::after{
+  content: '★★';
+  font-size: 20px;
+}
+
+.result-stars-3::after{
+  content: '★★★';
+  font-size: 20px;
+}
+
+.result-stars-4::after{
+  content: '★★★★';
+  font-size: 20px;
+}
+
+.result-stars-5::after{
+  content: '★★★★★';
+  font-size: 20px;
+}
+
+.rating {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  /* --- Оформление --- */
+  background-color: #f2f2f2;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+
+
+
+/* ----------- HOTELS END ----------- */ /* ----------- HOTELS END ----------- */
+
+/* ----------- FOOTER ----------- */
+
+.main-footer {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  background-color: rgba( 255, 255, 255, 0.1);
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+
+.hashtag {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  /* --- Оформление --- */
+  color: #000000;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.social {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  padding: 0;
+  /* --- Типографика --- */
+  text-align: center;
+  /* --- Оформление --- */
+  list-style: none;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.social a {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.copyright {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  text-align: center;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.copyright img {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  vertical-align: middle;
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.footer-copyright {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  /* --- Оформление --- */
+  color: #000000;
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.copyright a:hover,
+.copyright a:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+.copyright img:hover,
+.copyright img:focus {
+  /* --- Позиционирование --- */
+  /* --- Блочная модель --- */
+  /* --- Типографика --- */
+  /* --- Оформление --- */
+  /* --- Анимация --- */
+  /* --- Разное --- */
+}
+
+
+/* ----------- FOOTER END ----------- */
