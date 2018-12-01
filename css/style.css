@@ -6,331 +6,311 @@
   /* --- Разное --- */
 
 body {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
   margin: 0; 
   padding: 0;
-  /* --- Типографика --- */
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  /* --- Оформление --- */
-  background-color: #f2f2f2;
-  /* --- Анимация --- */
-  /* --- Разное --- */  
+  background-color: #f2f2f2; 
 }
 
 a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   text-decoration: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 .main-navigation {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #000000;
-  /* --- Оформление --- */
   background-color: #ffffff;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.city-logo {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 600px;
+  margin-left: -69px;
 }
 
 .site-navigation {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+  display: flex;
+  margin: 0;
+  margin-top: -78px;
+  padding: 0;
+  min-height: 56px;
   list-style: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.site-navigation li {
+  width: 240px;
+  margin: auto;
+  text-align: center;
 }
 
 .site-navigation a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #000000;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   outline: none;
   color: #81b3d2;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .site-navigation a:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   color: #b2b2b2;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
-
-
-/* --- ??? ---*/
-/* --- ??? ---*/
-/* --- ??? ---*/
 
 .site-navigation a.current {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   color: #766357;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
-
-/* --- ??? ---*/
-/* --- ??? ---*/
-/* --- ??? ---*/
 
 .main-greating {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 75px;
   background-image: url(../img/bg-welcome.jpg);
-  background-position: top center;
   background-repeat: no-repeat;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  background-position: 50% 55%;
 }
 
-.main-greating::after {
+.main-greating img {
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.greating-slogan {
+  margin: 0;
+  min-height: 110px;
+  width: 1200px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.greating-slogan::before {
   content: '';
+  position: relative;
+  display: block;
+  bottom: 56px;
+  width: 1200px;
+  height: 60px;
   background-image: url(../img/welcome-mask.svg);
   background-repeat: no-repeat;
 }
 
-.greating-slogan {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+.greating-slogan p {
+  width: 450px;
   font-size: 21px;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* ----------- ADVANTAGES ----------- */
 
+.main-advantages {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .advantages-slogan {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.advantages-slogan p {
+  display: block;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   font-weight: 400;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .advantages-list {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .other-advantage-list {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
+  display: flex;
+  margin: 0;
   padding: 0;
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   list-style: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .advantage-item,
 .other-advantage-item {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  flex-basis: 400px;
+  margin: auto;
+  min-height: 256px;
   text-align: center;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.other-advantage-item {
+  min-height: 330px;
+}
+
+.advantage-item:nth-child(1),
+.advantage-item:nth-child(3) {
+  flex-basis: 1200px;
 }
 
 .advantage-item h3,
 .other-advantage-item h3 {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  padding: 0;
+  margin: 0;
   font-size: 21px;
   line-height: 21px;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .advantage-item p,
 .other-advantage-item p,
 .advantage-item-number {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  padding: 0;
+  margin: 0;
   font-weight: 400;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .advantage-item:nth-child(1),
 .advantage-item:nth-child(3) {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  padding-top: 45px;
+  padding-bottom: 65px;
   color: #ffffff;
-  /* --- Оформление --- */
   background-color: #81b3d2;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  box-sizing: border-box;
+}
+
+.advantage-item:nth-child(1) {
+  padding-right: 845px;
+  padding-left: 55px;
+  background-image: url(../img/bg-true-city-small.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.advantage-item:nth-child(3) {
+  padding-left: 845px;
+  padding-right: 45px;
+  background-image: url(../img/bg-diablo-bridge-small.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .advantage-item:nth-child(4),
 .advantage-item:nth-child(5),
 .advantage-item:nth-child(6) {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #eeeeee;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  box-sizing: border-box;
 }
 
 .other-advantage-item {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+  padding-top: 160px;
+  padding-bottom: 85px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: #ffffff;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  box-sizing: border-box;
 }
 
 /* ----------- ADVANTAGES END ----------- */
 
-.hotel-search {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+.index-hotel-search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  margin: 0 auto;
+  width: 1200px;
   text-align: center;
-  /* --- Оформление --- */
   background-color: #ffffff;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .hotel-search-slogan {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  margin: 0;
+  margin-bottom: 35px;
   font-size: 30px;
   line-height: 36px;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .hotel-search-summary {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  margin-top: 0;
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
-.hotel-search a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+.index-hotel-search a {
+  margin: 0 auto;
+  width: 570px;
+  padding: 35px;
+  box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
-  vertical-align: middle;
-  /* --- Оформление --- */
   color: #ffffff;
   background-color: #766357;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
-.hotel-search a:hover,
-.hotel-search a:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+.index-hotel-search a:hover,
+.index-hotel-search a:focus {
   outline: none;
   background-color: #604e43;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
-.hotel-search a:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+.index-hotel-search a:active {
   color: #857871;
   background-color: #503e33;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 /* ----------- SEARCH FORM ----------- */
 
-.search-form {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+.index-search-form {
+  position: absolute;
+  bottom: -395px;
+  left: 315px;
+  z-index: 1;
+  min-height: 395px;
+  padding: 55px;
+  width: 570px;
   text-align: center;
-  /* --- Оформление --- */
   background-color: #ffffff;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  box-sizing: border-box;
 }
 
 .form-item input {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font: inherit;
-  /* --- Оформление --- */
   background-color: #f2f2f2;
   border: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .form-item input[type="number"]::-webkit-input-placeholder {
@@ -368,121 +348,73 @@ a {
 }
 
 .form-item input:hover {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   background-color: #ebebeb;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .form-item input:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   outline: none;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .hotel-search-ammount-minus,
 .hotel-search-ammount-plus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-family: inherit;
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
-  /* --- Оформление --- */
   border: none;
   background-color: #f2f2f2;
   color: #a9a9a9;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .hotel-search-ammount-minus:hover,
 .hotel-search-ammount-plus:hover,
 .hotel-search-ammount-minus:focus,
 .hotel-search-ammount-plus:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   outline: none;
   color: #000000;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .hotel-search-ammount-minus:active,
 .hotel-search-ammount-plus:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   color: #81b3d2;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .form-search-button {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
-  /* --- Оформление --- */
   border: none;
   background-color: #81b3d2;
   color: #ffffff;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .form-search-button:hover,
 .form-search-button:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  /* --- Оформление --- */
   outline: none;
   border: none;
   background-color: #669ec0;
   color: #ffffff;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .form-search-button:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  /* --- Оформление --- */
   border: none;
   background-color: #5496bd;
   color: #88b6d1;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 /* ----------- УБРАТЬ ВИЗУАЛЬНЫЙ КОНТРОЛ У ИНПУТОВ ----------- */
@@ -504,6 +436,10 @@ input[type="number"]:focus {
 
 /* ----------- SEARCH FORM END ----------- */
 
+.main-map {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 /* ----------- HOTELS ----------- */ /* ----------- HOTELS ----------- */
 
@@ -511,61 +447,60 @@ input[type="number"]:focus {
   background-color: #ffffff;
 }
 
-.search-form {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+.search-form form {
+  display: flex;
+  width: 1200px;
+  min-height: 220px;
+  margin: 0 auto;
+  padding: 30px 75px;
+  justify-content: space-between;
   background-color: #5d5c5d;
   background-image: url(../img/bg-welcome-blur.jpg);
   background-repeat: no-repeat;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  box-sizing: border-box;
 }
 
-fieldset {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+.search-form fieldset {
+  margin: 0px;
+  padding: 0px;
   color: #ffffff;
   text-align: left;
-  /* --- Оформление --- */
+  font-size: 16px;
+  line-height: 21px;
   border: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.hotel-type {
+  display: flex;
+}
+
+.search-infrastructure,
+.search-housing-type {
+  display: flex;
+  width: 240px;
+}
+
+.search-infrastructure label,
+.search-housing-type label {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .search-form label {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-weight: 400;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .search-price input[type="number"] {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  padding: 5px;
   color: #ffffff;
-  /* --- Оформление --- */
+  text-align: center;
   border: none;
   background-color: transparent;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .search-price-input {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   border: 2px solid #ffffff;
   border-radius: 2px;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .search-price input[type="number"]::-webkit-input-placeholder {
@@ -590,9 +525,6 @@ fieldset {
 }
 
 .search-form button[type="submit"] {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-family: inherit;
   font-size: 14px;
   font-weight: 400;
@@ -600,141 +532,106 @@ fieldset {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  /* --- Оформление --- */
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .search-form button[type="submit"]:hover,
 .search-form button[type="submit"]:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #000000;
-  /* --- Оформление --- */
   background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.search-sort {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 90px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.search-sort p {
+  margin: 0;
+  margin-right: 50px;
+  padding: 0;
 }
 
 .nothing-found {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 26px;
   line-height: 30px;
   text-align: center;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
 }
 
 .found-ammount {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  text-align: center;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */  
+  text-align: center; 
 }
 
 .found-ammount p {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 21px;
-  line-height: 26px;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */  
+  line-height: 26px; 
 }
 
+.sort-type {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: 40px;
+}
+
+.sort-type li {
+  margin-right: 30px;
+}
+
+.sort-order{
+  display: flex;
+  justify-content: space-between;
+  width: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+
 .search-sort li {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 12px;
   line-height: 18px;
-  /* --- Оформление --- */
   list-style: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
 }
 
 .sort-type a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-weight: 400;
   color: #cacaca;
-  /* --- Оформление --- */
   outline: none;
   border-bottom: 1px dotted #81b3d2;
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
 }
 
 .sort-type a.current {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-weight: 400;
   color: #81b3d2;
-  /* --- Оформление --- */
   border-bottom: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .sort-type a:hover,
 .sort-type a:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-weight: 400;
   color: #81b3d2;
-  /* --- Оформление --- */
   border-bottom: 1px dotted #81b3d2;
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
 }
 
 .sort-type a:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-weight: 400;
   color: #000000;
-  /* --- Оформление --- */
-  border-bottom: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
-}
-
-.sort-order a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  font-size: 0;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
+  border-bottom: none; 
 }
 
 .sort-order a.current::after {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  color: #81b3d2;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */ 
+  color: #81b3d2; 
 }
 
 a.down::after {
@@ -767,153 +664,115 @@ a.up:active::after {
   color: #81b3d2;
 }
 
+.nothing-found {
+  
+  width: 1200px;
+  margin: 0 auto;
+  display: none;
+}
+
+.result-list {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
 .result-item {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
+  width: 1200px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
-  /* --- Анимация --- */
-  /* --- Разное --- */
+}
+
+.result-items {
+  display: flex;
+}
+
+.result-items img {
+  margin-right: 30px;
+}
+
+.result-items h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.more-and-book {
+  margin-right: auto;
+  width: 260px;
 }
 
 .result-item:first-child {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   list-style: none;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-title a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-  /* --- Оформление --- */
   outline: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-title a:hover,
 .result-title a:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #81b3d2;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-title a:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #cacaca;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .result-type,
 .result-item .result-price {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #000000;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .button {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .more {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   background-color: #81b3d2;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .more:hover,
 .result-item .more:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   background-color: #669ec0;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .more:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #94b9d2;
-  /* --- Оформление --- */
   background-color: #5496bd;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .book {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   background-color: #766357;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .book:hover,
 .result-item .book:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
   background-color: #604e43;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-item .book:active {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   color: #928a85;
-  /* --- Оформление --- */
   background-color: #503e33;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .result-stars {
@@ -947,124 +806,80 @@ a.up:active::after {
 }
 
 .rating {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #000000;
-  /* --- Оформление --- */
   background-color: #f2f2f2;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
-
-
-
 
 /* ----------- HOTELS END ----------- */ /* ----------- HOTELS END ----------- */
 
 /* ----------- FOOTER ----------- */
+.inner-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 120px;
+}
+
 
 .main-footer {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
-  background-color: rgba( 255, 255, 255, 0.1);
-  /* --- Анимация --- */
-  /* --- Разное --- */
+  position: relative;
+  top: -120px;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 120px;
+  background-color: rgba( 255, 255, 255, 0.9);
 }
 
 
 .hashtag {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  margin: auto;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  /* --- Оформление --- */
   color: #000000;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .social {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
+  display: flex;
+  justify-content: center;
   padding: 0;
-  /* --- Типографика --- */
+  margin: auto;
+  width: 400px;
   text-align: center;
-  /* --- Оформление --- */
   list-style: none;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
-.social a {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
+.social a::after {
+  content: '';
+  display: block;
+  margin: 5px;
+  position: relative;
+  height: 48px;
+  width: 46px;
+  background-color: #81b3d2;
 }
 
 .copyright {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
+  width: 400px;
+  margin: auto;
   text-align: center;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .copyright img {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   vertical-align: middle;
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
 
 .footer-copyright {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  /* --- Оформление --- */
   color: #000000;
-  /* --- Анимация --- */
-  /* --- Разное --- */
 }
-
-.copyright a:hover,
-.copyright a:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
-}
-
-.copyright img:hover,
-.copyright img:focus {
-  /* --- Позиционирование --- */
-  /* --- Блочная модель --- */
-  /* --- Типографика --- */
-  /* --- Оформление --- */
-  /* --- Анимация --- */
-  /* --- Разное --- */
-}
-
 
 /* ----------- FOOTER END ----------- */

@@ -16,38 +16,35 @@
     <!-- CONTENT -->
     
     <header class="main-header">
-      
       <!-- LOGO -->
         <a class="city-logo" title="Герб города"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
-      <!-- LOGO END -->
-      
+      <!-- LOGO END --> 
       <!-- MAIN NAVIGATION -->
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a title="Вы находитесь на главной" class="current">Информация</a></li>
             <li><a href="#" title="Ссылка на страницу с фото и видео">Фото и видео</a></li>
+            <li></li>
             <li><a href="#" title="Ссылка на страницу с картой штата">Карта штата</a></li>
             <li><a href="hotels.html" title="Ссылка на страницу с подбором гостиниц">Гостиницы</a></li>
           </ul>
         </nav>
       <!-- MAIN NAVIGATION END -->
-      
     </header>
-    
     <main>
-      
       <!-- GREATING -->
       <section class="main-greating">
         <h1 class="visualy-hidden">Седона - город в Аризоне</h1>
         <img src="img/welcome-sedona.svg" width="459" height="353" alt="Логотип города Седона с приветсвием">
-        <p class="greating-slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <div class="greating-slogan"><p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p></div>
       </section>
-      <!-- GREATING END -->
-      
+      <!-- GREATING END --> 
       <!-- ADVANTAGES -->
       <section class="main-advantages">
         <h2 class="visualy-hidden">Преимущества города Седона</h2>
-        <p class="advantages-slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div  class="advantages-slogan">
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
         <ul class="advantages-list">
           <li class="advantage-item">
             <h3>Настоящий городок</h3>
@@ -73,7 +70,7 @@
           <li class="advantage-item">
             <h3>Там есть<br>мост Дьявола</h3>
             <span class="advantage-item-number">-№2-</span>
-            <p class="advantages-item-summary">Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
+            <p class="advantages-item-summary">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="advantage-item">
             <h3>Небольшая площадь</h3>
@@ -93,41 +90,39 @@
         </ul>        
       </section>
       <!-- ADVANTAGES END -->
-      
       <!-- SEARCH -->
-      <section class="hotel-search">
+      <section class="index-hotel-search">
         <h2 class="visualy-hidden">Поиск гостиницы в Седоне</h2>
         <p class="hotel-search-slogan">Заинтересовались?</p>
         <p class="hotel-search-summary">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" title="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</a>
-      </section>
-      <section class="search-form">
-        <form method="post" action="https://echo.htmlacademy.ru">
-          <p class="form-item">
-            <label for="arrival">Дата заезда:</label>
-            <input type="text" placeholder="24 апреля 2017" id="arrival" name="arrival" required>
-          </p>
-          <p class="form-item">
-            <label for="departure">Дата выезда:</label>
-            <input type="text" placeholder="4 июля 2017" id="departure" name="departure">
-          </p>
-          <p class="form-item">
-            <label for="adultammount">Взрослые:</label>
-            <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника" aria-label="Убрать путешественника">-</button>
-            <input type="number" placeholder="2" min="1" id="adultammount" name="adultammount"  aria-label="Количество путешественников" required>
-            <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника" aria-label="Добавить путешественника">+</button>
-          </p>
-          <p class="form-item">
-            <label for="childammount">Дети:</label>
-            <button type="button" class="hotel-search-ammount-minus" title="Убрать ребенка-путешественника" aria-label="Убрать ребенка-путешественника">-</button>
-            <input type="number" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
-            <button type="button" class="hotel-search-ammount-plus" title="Добавить ребенка-путешественника" aria-label="Добавить ребенка-путешественника">+</button>
-          </p>
-          <button type="submit" class="form-search-button">Найти</button>
-        </form>
+        <a class="btn-index-search" href="#" title="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</a>
+        <div class="index-search-form">
+          <form method="post" action="https://echo.htmlacademy.ru">
+            <p class="form-item">
+              <label for="arrival">Дата заезда:</label>
+              <input type="text" placeholder="24 апреля 2017" id="arrival" name="arrival" required>
+            </p>
+            <p class="form-item">
+              <label for="departure">Дата выезда:</label>
+              <input type="text" placeholder="4 июля 2017" id="departure" name="departure">
+            </p>
+            <p class="form-item">
+              <label for="adultammount">Взрослые:</label>
+              <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника" aria-label="Убрать путешественника">-</button>
+              <input type="number" placeholder="2" min="1" id="adultammount" name="adultammount"  aria-label="Количество путешественников" required>
+              <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника" aria-label="Добавить путешественника">+</button>
+            </p>
+            <p class="form-item">
+              <label for="childammount">Дети:</label>
+              <button type="button" class="hotel-search-ammount-minus" title="Убрать ребенка-путешественника" aria-label="Убрать ребенка-путешественника">-</button>
+              <input type="number" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
+              <button type="button" class="hotel-search-ammount-plus" title="Добавить ребенка-путешественника" aria-label="Добавить ребенка-путешественника">+</button>
+            </p>
+            <button type="submit" class="form-search-button">Найти</button>
+          </form>
+        </div>
       </section>
       <!-- SEARCH END -->
-      
       <!-- MAP -->
       <section class="main-map">
         <h2 class="visualy-hidden">Карта города Седона</h2>
@@ -150,9 +145,9 @@
       
       <!-- SOCIAL -->
       <ul class="social">
-        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Мы в Twitter</a></li>
-        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Мы в Facebook</a></li>
-        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Мы в Youtube</a></li>
+        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank"><span class="visualy-hidden">Мы в Twitter</span></a></li>
+        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank"><span class="visualy-hidden">Мы в Facebook</span></a></li>
+        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank"><span class="visualy-hidden">Мы в Youtube</span></a></li>
       </ul>
       <!-- SOCIAL END -->
       

@@ -18,7 +18,7 @@
     <header class="main-header">
       
       <!-- LOGO -->
-      <a href="index.html" title="Переход на главную" aria-label="Переход на главную страницу"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
+      <a class="city-logo" href="index.html" title="Переход на главную" aria-label="Переход на главную страницу"><img src="img/logo-sedona.svg" width="138" height="71" alt="Герб города"></a>
       <!-- LOGO END -->
       
       <!-- MAIN NAVIGATION -->
@@ -26,6 +26,7 @@
           <ul class="site-navigation">
             <li><a href="#" title="Переход на главную">Информация</a></li>
             <li><a href="#" title="Ссылка на страницу с фото и видео">Фото и видео</a></li>
+            <li></li>
             <li><a href="#" title="Ссылка на страницу с картой штата">Карта штата</a></li>
             <li><a class="current" title="Ссылка на страницу с подбором гостиниц">Гостиницы</a></li>
           </ul>
@@ -35,41 +36,45 @@
     </header>
     
     <main class="inner-main">
-      <h1 class="visuali-hidden">Поиск гостиниц в Седоне</h1>
+      <h1 class="visualy-hidden">Поиск гостиниц в Седоне</h1>
       
       <!-- SEARCH -->
       <section class="search-form">
-        <h2 class="visualy hidden">Параметры поиска</h2>
+        <h2 class="visualy-hidden">Параметры поиска</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="search-infrastructure">
-            <legend>Инфраструктура:</legend>
-            <label for="pool" title="Наличие бассейна"><input id="pool" type="checkbox" name="pool">Бассейн</label>
-            <label for="parking" title="Наличие парковки"><input id="parking" type="checkbox" name="parking">Парковка</label>
-            <label for="wifi" title="Наличие Wi-Fi"><input id="wifi" type="checkbox" name="wifi">Wi-Fi</label>
-          </fieldset>
-          <fieldset class="search-housing-type">
-            <legend>Тип жилья:</legend>
-            <label for="hotel"><input id="hotel" type="checkbox" name="hotel">Гостиница</label>
-            <label for="motel"><input id="motel" type="checkbox" name="motel">Мотель</label>
-            <label for="appartment"><input id="appartment" type="checkbox" name="appartment">Апартаменты</label>
-          </fieldset>
-          <fieldset class="search-price">
-            <legend>Стоимость в сутки (Р):</legend>
-            <p class="search-price-input">
-              <input type="number" id="pricemin" placeholder="от 0" title="Стоимость в сутки от" name="pricemin" max="5000" aria-label="Минимальная стоимость в сутки">
-              <input type="number" id="pricemax" placeholder="до 5000" title="Стоимость в сутки до" name="pricemax" max="5000" aria-label="Максимальная стоимость в сутки">
-            </p>
-            
-            <p class="search-range-immitation">
-              <button class="button search-minprice" type="button">Минимальная цена</button>
-              <button class="button search-maxprice" type="button">Максимальая цена</button>
-            </p>            
-            <!--
-            <input type="range" id="rangemin" min="0" max="5000" step="1" value="0" onchange="pricemin.value=rangemin.value">
-            <input type="range" id="rangemax" min="0" max="5000" step="1" value="4000" onchange="pricemax.value=rangemax.value">
-            -->
-          </fieldset>
-          <button type="submit" class="form-show button">Показать</button>
+          <div class="hotel-type">
+            <fieldset class="search-infrastructure">
+              <legend>Инфраструктура:</legend>
+              <label for="pool" title="Наличие бассейна"><input id="pool" type="checkbox" name="pool">Бассейн</label>
+              <label for="parking" title="Наличие парковки"><input id="parking" type="checkbox" name="parking">Парковка</label>
+              <label for="wifi" title="Наличие Wi-Fi"><input id="wifi" type="checkbox" name="wifi">Wi-Fi</label>
+            </fieldset>
+            <fieldset class="search-housing-type">
+              <legend>Тип жилья:</legend>
+              <label for="hotel"><input id="hotel" type="checkbox" name="hotel">Гостиница</label>
+              <label for="motel"><input id="motel" type="checkbox" name="motel">Мотель</label>
+              <label for="appartment"><input id="appartment" type="checkbox" name="appartment">Апартаменты</label>
+            </fieldset>
+          </div>
+          <div class="hotel-price">
+            <fieldset class="search-price">
+              <legend>Стоимость в сутки (Р):</legend>
+              <p class="search-price-input">
+                <input type="number" id="pricemin" placeholder="от 0" title="Стоимость в сутки от" name="pricemin" max="5000" aria-label="Минимальная стоимость в сутки">
+                <input type="number" id="pricemax" placeholder="до 3000" title="Стоимость в сутки до" name="pricemax" max="5000" aria-label="Максимальная стоимость в сутки">
+              </p>
+
+              <p class="search-range-immitation">
+                <button class="button search-minprice" type="button">Минимальная цена</button>
+                <button class="button search-maxprice" type="button">Максимальая цена</button>
+              </p>            
+              <!--
+              <input type="range" id="rangemin" min="0" max="5000" step="1" value="0" onchange="pricemin.value=rangemin.value">
+              <input type="range" id="rangemax" min="0" max="5000" step="1" value="4000" onchange="pricemax.value=rangemax.value">
+              -->
+            </fieldset>
+            <button type="submit" class="form-show button">Показать</button>
+          </div>
         </form>
       </section>
       <!-- SEARCH END -->
@@ -87,8 +92,8 @@
           <li class="sort-item"><a href="#" title="Сортировка по рейтингу">По рейтингу</a></li>
         </ul>
         <ul class="sort-order">
-          <li class="sort-order-item"><a class="up" href="#" title="Отсортировать по возрастанию">По возрастанию</a></li>
-          <li class="sort-order-item"><a class="down current" title="Отсортировать по убыванию">По убыванию</a></li>
+          <li class="sort-order-item"><a class="up" href="#" title="Отсортировать по возрастанию"><span class="visualy-hidden">По возрастанию</span></a></li>
+          <li class="sort-order-item"><a class="down current" title="Отсортировать по убыванию"><span class="visualy-hidden">По убыванию</span></a></li>
         </ul>
       </section>
       <!-- SEARCH SORT END -->
@@ -106,45 +111,57 @@
         <div>
           <ul class="result-list">
             <li class="result-item">
-              <article>
+              <article class="result-items">
                 <img src="img/img-amara-resort.jpg" width="135" height="90" alt="Отель Amara Resort & SPA">
-                <h1 class="result-title"><a href="#" title="Переход на страницу Amara Resort $ SPA">Amara Resort $ SPA</a></h1>
-                <span class="result-type">Гостиница</span>
-                <span class="result-price">От 4 000 р.</span>
-                <a class="button more" href="#" title="Подробнее о Amara Resort $ SPA">Подробнее</a>
-                <a class="button book" href="#" title="Забронировать о Amara Resort $ SPA">Забронировать</a>
-                <span class="result-stars result-stars-4">4</span>
-                <div class="rating">
-                  <p class="result-rating">Рейтинг: <span class="result-rating-sum">8,5</span></p>
+                <div class="more-and-book">
+                  <h1 class="result-title"><a href="#" title="Переход на страницу Amara Resort $ SPA">Amara Resort $ SPA</a></h1>
+                  <span class="result-type">Гостиница</span>
+                  <span class="result-price">От 4 000 р.</span>
+                  <a class="button more" href="#" title="Подробнее о Amara Resort $ SPA">Подробнее</a>
+                  <a class="button book" href="#" title="Забронировать о Amara Resort $ SPA">Забронировать</a>
+                </div>
+                <div  class="stars-and-rating">
+                  <span class="result-stars result-stars-4">4</span>
+                  <div class="rating">
+                    <p class="result-rating">Рейтинг: <span class="result-rating-sum">8,5</span></p>
+                  </div>
                 </div>
               </article>
             </li>
             <li class="result-item">
-              <article>
+              <article class="result-items">
                 <img src="img/img-desert-quail.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-                <h1 class="result-title"><a href="#" title="Переход на страницу Desert Quail Inn">Desert Quail Inn</a></h1>
-                <span class="result-type">Мотель</span>
-                <span class="result-price">От 3 000 р.</span>
-                <a class="button more" href="#" title="Подробнее о Desert Quail Inn">Подробнее</a>
-                <a class="button book" href="#" title="Забронировать о Desert Quail Inn">Забронировать</a>
-                <span class="result-stars result-stars-3">3</span>
-                <div class="rating">
-                  <p class="result-rating">Рейтинг: <span class="result-rating-sum">8,9</span></p>
+                <div class="more-and-book">
+                  <h1 class="result-title"><a href="#" title="Переход на страницу Desert Quail Inn">Desert Quail Inn</a></h1>
+                  <span class="result-type">Мотель</span>
+                  <span class="result-price">От 3 000 р.</span>
+                  <a class="button more" href="#" title="Подробнее о Desert Quail Inn">Подробнее</a>
+                  <a class="button book" href="#" title="Забронировать о Desert Quail Inn">Забронировать</a>
+                </div>
+                <div class="stars-and-rating">
+                  <span class="result-stars result-stars-3">3</span>
+                  <div class="rating">
+                    <p class="result-rating">Рейтинг: <span class="result-rating-sum">8,9</span></p>
+                  </div>
                 </div>
               </article>
             </li>
             <li class="result-item">
-              <article>
+              <article class="result-items">
                 <img src="img/img-villas-at-poco.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-                <h1 class="result-title"><a href="#" title="Переход на страницу Villas at Poco Diablo">Villas at Poco Diablo</a></h1>
-                <span class="result-type">Аппартаменты</span>
-                <span class="result-price">От 2 000 р.</span>
-                <a class="button more" href="#" title="Подробнее о Villas at Poco Diablo">Подробнее</a>
-                <a class="button book" href="#" title="Забронировать о Villas at Poco Diablo">Забронировать</a>
-                <span class="result-stars result-stars-2">2</span>
-                <div class="rating">
-                  <p class="result-rating">Рейтинг: <span class="result-rating-sum">9,2</span></p>
+                <div class="more-and-book"> 
+                  <h1 class="result-title"><a href="#" title="Переход на страницу Villas at Poco Diablo">Villas at Poco Diablo</a></h1>
+                  <span class="result-type">Аппартаменты</span>
+                  <span class="result-price">От 2 000 р.</span>
+                  <a class="button more" href="#" title="Подробнее о Villas at Poco Diablo">Подробнее</a>
+                  <a class="button book" href="#" title="Забронировать о Villas at Poco Diablo">Забронировать</a>
                 </div>
+                <div class="stars-and-rating">
+                  <span class="result-stars result-stars-2">2</span>
+                  <div class="rating">
+                    <p class="result-rating">Рейтинг: <span class="result-rating-sum">9,2</span></p>
+                  </div>
+                 </div>
               </article>
             </li>
           </ul>
@@ -154,7 +171,7 @@
       
     </main>
     
-    <footer class="main-footer">
+    <footer class="inner-footer">
       
       <!-- FOOTER HASHTAG -->
       <div class="hashtag">
@@ -164,9 +181,9 @@
       
       <!-- SOCIAL -->
       <ul class="social">
-        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank">Мы в Twitter</a></li>
-        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank">Мы в Facebook</a></li>
-        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank">Мы в Youtube</a></li>
+        <li><a href="#" class="social-btn social-btn-tw" title="Мы в Twitte" target="_blank"><span class="visualy-hidden">Мы в Twitter</span></a></li>
+        <li><a href="#" class="social-btn social-btn-fb" title="Мы в Facebook" target="_blank"><span class="visualy-hidden">Мы в Facebook</span></a></li>
+        <li><a href="#" class="social-btn social-btn-yt" title="Мы в Youtube" target="_blank"><span class="visualy-hidden">Мы в Youtube</span></a></li>
       </ul>
       <!-- SOCIAL END -->
       
