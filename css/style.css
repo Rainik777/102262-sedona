@@ -693,6 +693,7 @@ a.up:active::after {
 
 .result-items {
   display: flex;
+  background-color: #ffffff;
 }
 
 .result-items img {
@@ -821,6 +822,7 @@ a.up:active::after {
   width: 1200px;
   margin: 0 auto;
   min-height: 120px;
+  background-color: #ffffff;
 }
 
 
