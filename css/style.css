@@ -63,6 +63,10 @@ a {
   text-align: center;
 }
 
+.site-navigation li:nth-child(2) {
+  margin-right: 240px;
+}
+
 .site-navigation a {
   color: #000000;
 }
