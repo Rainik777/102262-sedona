@@ -441,15 +441,12 @@ input[type="number"]:focus {
 /* ----------- SEARCH FORM END ----------- */
 
 .main-map {
+  padding: 0;
   width: 1200px;
   margin: 0 auto;
 }
 
 /* ----------- HOTELS ----------- */ /* ----------- HOTELS ----------- */
-
-.inner-main {
-  background-color: #ffffff;
-}
 
 .search-form form {
   display: flex;
@@ -461,6 +458,7 @@ input[type="number"]:focus {
   background-color: #5d5c5d;
   background-image: url(../img/bg-welcome-blur.jpg);
   background-repeat: no-repeat;
+  background-position: 20% 15%;
   box-sizing: border-box;
 }
 
@@ -558,6 +556,7 @@ input[type="number"]:focus {
   min-height: 90px;
   padding-left: 75px;
   padding-right: 75px;
+  background-color: #ffffff;
 }
 
 .search-sort p {
@@ -681,7 +680,7 @@ a.up:active::after {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  
+  background-color: #ffffff;
 }
 
 .result-item {
@@ -832,10 +831,11 @@ a.up:active::after {
 
 .main-footer {
   position: relative;
-  top: -120px;
   display: flex;
   width: 1200px;
-  margin: 0 auto;
+  margin-top: -120px;
+  margin left: auto;
+  margin-right: auto;
   min-height: 120px;
   background-color: rgba( 255, 255, 255, 0.9);
 }
