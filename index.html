@@ -47,7 +47,7 @@
         <ul class="advantages-list">
           <li class="advantage-item">
             <h3>Настоящий городок</h3>
-            <span class="advantage-item-number">-№1-</span>
+            <span class="advantage-item-number">- №1 -</span>
             <p class="advantages-item-summary">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li>
@@ -68,22 +68,22 @@
           </li>
           <li class="advantage-item">
             <h3>Там есть<br>мост Дьявола</h3>
-            <span class="advantage-item-number">-№2-</span>
+            <span class="advantage-item-number">- №2 -</span>
             <p class="advantages-item-summary">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="advantage-item">
             <h3>Небольшая площадь</h3>
-            <span class="advantage-item-number">-№3-</span>
+            <span class="advantage-item-number">- №3 -</span>
             <p class="advantages-item-summary">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantage-item">
             <h3>Красивая дорога</h3>
-            <span class="advantage-item-number">-№4-</span>
+            <span class="advantage-item-number">- №4 -</span>
             <p class="advantages-item-summary">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantage-item">
             <h3>Мало туристов</h3>
-            <span class="advantage-item-number">-№5-</span>
+            <span class="advantage-item-number">- №5 -</span>
             <p class="advantages-item-summary">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>        
@@ -97,25 +97,27 @@
         <a class="btn-index-search" href="#" title="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</a>
         <div class="index-search-form">
           <form method="post" action="https://echo.htmlacademy.ru">
-            <p class="form-item">
+            <p class="form-item form-date arrival">
               <label for="arrival">Дата заезда:</label>
               <input type="text" placeholder="24 апреля 2017" id="arrival" name="arrival" required>
             </p>
-            <p class="form-item">
+            <p class="form-item form-date departure">
               <label for="departure">Дата выезда:</label>
               <input type="text" placeholder="4 июля 2017" id="departure" name="departure">
             </p>
-            <p class="form-item">
-              <label for="adultammount">Взрослые:</label>
-              <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника" aria-label="Убрать путешественника">-</button>
-              <input type="number" placeholder="2" min="1" id="adultammount" name="adultammount"  aria-label="Количество путешественников" required>
-              <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника" aria-label="Добавить путешественника">+</button>
-            </p>
-            <p class="form-item">
-              <label for="childammount">Дети:</label>
-              <button type="button" class="hotel-search-ammount-minus" title="Убрать ребенка-путешественника" aria-label="Убрать ребенка-путешественника">-</button>
-              <input type="number" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
-              <button type="button" class="hotel-search-ammount-plus" title="Добавить ребенка-путешественника" aria-label="Добавить ребенка-путешественника">+</button>
+            <p class="form-item form-people">
+              <label for="adultammount" class="adultammount">Взрослые:</label>
+              <span>
+                <button type="button" class="hotel-search-ammount-minus" title="Убрать путешественника" aria-label="Убрать путешественника">-</button>
+                <input type="number" placeholder="2" min="1" id="adultammount" name="adultammount"  aria-label="Количество путешественников" required>
+                <button type="button" class="hotel-search-ammount-plus" title="Добавить путешественника" aria-label="Добавить путешественника">+</button>
+              </span>
+              <label for="childammount" class="childammount">Дети:</label>
+              <span>  
+                <button type="button" class="hotel-search-ammount-minus" title="Убрать ребенка-путешественника" aria-label="Убрать ребенка-путешественника">-</button>
+                <input type="number" placeholder="0" min="0" id="childammount" name="childammount" aria-label="Количество детей-путешественников">
+                <button type="button" class="hotel-search-ammount-plus" title="Добавить ребенка-путешественника" aria-label="Добавить ребенка-путешественника">+</button>
+              </span>
             </p>
             <button type="submit" class="form-search-button">Найти</button>
           </form>
