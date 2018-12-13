@@ -26,8 +26,8 @@ img {
   height: auto;
 }
 
-.visualy-hidden:not(:focus):not(:active),
-input[type="chekbox"].visualy-hidden, 
+.visualy-hidden,
+input[type="chekbox"].visualy-hidden,
 input[type="radio"].visualy-hidden {
   position: absolute;
   
@@ -636,10 +636,6 @@ input[type="radio"].visualy-hidden {
   display: flex;
 }
 
-.hotel-type input {
-  display: none;
-}
-
 .search-infrastructure,
 .search-housing-type {
   display: flex;
@@ -653,10 +649,9 @@ input[type="radio"].visualy-hidden {
   margin-bottom: 25px;
 }
 
-
-
 .search-infrastructure label,
 .search-housing-type label {
+  position: relative;
   flex-basis: 160px;
   padding-left: 40px;
   font-size: 14px;
@@ -669,8 +664,37 @@ input[type="radio"].visualy-hidden {
   margin-bottom: 0;
 }
 
+.form-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -1px;
+  left: 0;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+
+.form-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.form-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.form-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url(../img/checkbox-on.svg); 
+}
+
+.form-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url(../img/checkbox-off.svg);
+  opacity: 0.5;
+}
+
+.form-checkbox input[type="checkbox"]:disabled:checked + .checkbox-indicator {
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 0.5;
+}
+
 .search-form label {
-  font-weight: 400;
+  font-weight: 400;  
 }
 
 .hotel-price {
@@ -741,17 +765,54 @@ input[type="radio"].visualy-hidden {
   position: absolute;
 }
 
-.search-minprice {
-  width: 120px;
-  bottom: 10px;
-  left: 10px;
+.search-minprice,
+.search-maxprice {
+  border: none;
+  background-color: transparent;
 }
 
-.search-maxprice {
-  width: 120px;
-  bottom: 10px;
-  right: 10px;
+.disk-indicator {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  background-image: url(../img//range-disk.svg);
+  background-repeat: no-repeat;
 }
+
+.search-range-immitation button {
+  outline: none;
+}
+
+.disk-indicator:hover,
+.search-minprice:focus .disk-indicator,
+.search-maxprice:focus .disk-indicator {
+  transform: scale(1.1);
+}
+
+.search-minprice .disk-indicator {
+  top: -40px;
+}
+
+.search-maxprice .disk-indicator {
+  top: -40px;
+  left: 230px;
+}
+
+.search-range-immitation::after,
+.search-range-immitation::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  width: 210px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.search-range-immitation::before {
+  width: 280px;
+  opacity: 0.5;
+}
+
 
 .search-form button[type="submit"] {
   margin-left: 82px;
@@ -1233,7 +1294,7 @@ a.up:active::after {
   text-align: center;
 }
 
-.copyright img {
+.copyright svg {
   vertical-align: middle;
 }
 
@@ -1243,6 +1304,19 @@ a.up:active::after {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
+}
+
+.copyright-logo path {
+  fill: #231f20;
+}
+
+.copyright-logo:hover path,
+.copyright-logo:focus path {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active path {
+  fill: #bdbbbc;
 }
 
 /* ----------- FOOTER END ----------- */
