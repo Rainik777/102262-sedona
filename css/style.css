@@ -47,7 +47,7 @@ input[type="radio"].visualy-hidden {
 .shadow {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.85);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .main-header {
@@ -377,7 +377,7 @@ input[type="radio"].visualy-hidden {
   text-align: center;
   background-color: #ffffff;
   box-sizing: border-box;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.85);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .form-item {
@@ -456,6 +456,11 @@ input[type="radio"].visualy-hidden {
   height: 40px;
 }
 
+.form-date input:focus {
+  padding-left: 13px;
+  padding-right: 40px;
+}
+
 .arrival {
   position: relative;
   margin-bottom: 27px;
@@ -492,7 +497,7 @@ input[type="radio"].visualy-hidden {
 }
 
 .form-people input[type="number"] {
-  padding: 0;
+  padding: 9px;
   margin: 0;
   width: 38px;
   height: 38px;
@@ -665,6 +670,14 @@ input[type="radio"].visualy-hidden {
   margin-bottom: 25px;
 }
 
+.search-infrastructure input[type="checkbox"]:focus + span {
+  outline: auto;
+}
+
+.search-housing-type input[type="checkbox"]:focus + span {
+  outline: auto;
+}
+
 .search-infrastructure label:last-child,
 .search-housing-type label:last-child{
   margin-bottom: 0;
@@ -680,8 +693,8 @@ input[type="radio"].visualy-hidden {
   background-repeat: no-repeat;
 }
 
-.form-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
-.form-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+.form-checkbox input[type="checkbox"]:checked:hover + .checkbox-indicator,
+.form-checkbox input[type="checkbox"]:checked:focus + .checkbox-indicator {
   background-image: url(../img/checkbox-on.svg);
 }
 
