@@ -44,6 +44,12 @@ input[type="radio"].visualy-hidden {
   overflow: hidden;
 }
 
+.shadow {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.85);
+}
+
 .main-header {
   margin-left: auto;
   margin-right: auto;
@@ -371,7 +377,7 @@ input[type="radio"].visualy-hidden {
   text-align: center;
   background-color: #ffffff;
   box-sizing: border-box;
-  box-shadow: 0 7px 15px 5px grba(black, 0.5);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.85);
 }
 
 .form-item {
@@ -932,15 +938,21 @@ input[type="radio"].visualy-hidden {
   border-bottom: none; 
 }
 
+.sort-type a:hover {
+  font-weight: 400;
+  color: #000000;
+  border-bottom: none; 
+}
+
 .up polygon,
 .down polygon {
   fill: #cacaca;
 }
 
-.up:hover polygon,
-.up:focus polygon,
-.down:hover polygon,
-.down:focus polygon {
+.up:not(.current):hover polygon,
+.up:not(.current):focus polygon,
+.down:not(.current):hover polygon,
+.down:not(.current):focus polygon {
   fill: #000000;
 }
 
