@@ -51,6 +51,7 @@ input[type="radio"].visualy-hidden {
 }
 
 .main-header {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -62,7 +63,9 @@ input[type="radio"].visualy-hidden {
 }
 
 .city-logo {
-  position: relative;
+  position: absolute;
+  width: 138px;
+  height: 71px;
   z-index: 1;
   top: 0;
   left: 600px;
@@ -73,7 +76,6 @@ input[type="radio"].visualy-hidden {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: -79px;
   padding: 0;
   min-height: 56px;
   list-style: none;
@@ -497,11 +499,12 @@ input[type="radio"].visualy-hidden {
 }
 
 .form-people input[type="number"] {
-  padding: 9px;
+  padding: 8px;
   margin: 0;
-  width: 38px;
+  width: 45px;
   height: 38px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .form-people {
@@ -615,6 +618,15 @@ input[type="radio"].visualy-hidden {
   padding: 0;
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: -115px;
+  height: 590px;
+  background-color: aquamarine;
+}
+
+.main-map iframe {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 /* ----------- HOTELS ----------- */ /* ----------- HOTELS ----------- */
@@ -717,7 +729,7 @@ input[type="radio"].visualy-hidden {
 }
 
 .hotel-price {
-  width: 310px;
+  width: 315px;
 }
 
 .search-price legend {
@@ -809,26 +821,27 @@ input[type="radio"].visualy-hidden {
 }
 
 .search-minprice .disk-indicator {
-  top: -40px;
+  top: -43px;
+  left: -5px;
 }
 
 .search-maxprice .disk-indicator {
-  top: -40px;
-  left: 230px;
+  top: -43px;
+  left: 247px;
 }
 
 .search-range-immitation::after,
 .search-range-immitation::before {
   content: '';
   position: absolute;
-  top: -30px;
-  left: 20px;
-  width: 210px;
+  top: -35px;
+  left: 8px;
+  width: 240px;
   border-bottom: 2px solid #ffffff;
 }
 
 .search-range-immitation::before {
-  width: 280px;
+  width: 308px;
   opacity: 0.5;
 }
 
@@ -942,7 +955,6 @@ input[type="radio"].visualy-hidden {
 .sort-type a:focus {
   font-weight: 400;
   color: #81b3d2;
-  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-type a:active {
@@ -951,10 +963,8 @@ input[type="radio"].visualy-hidden {
   border-bottom: none; 
 }
 
-.sort-type a:hover {
-  font-weight: 400;
-  color: #000000;
-  border-bottom: none; 
+.sort-order {
+  padding-top: 5px;
 }
 
 .up polygon,
@@ -1229,10 +1239,9 @@ a.up:active::after {
   position: relative;
   display: flex;
   width: 1200px;
-  margin-top: -128px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 120px;
+  min-height: 115px;
   background-color: rgba( 255, 255, 255, 0.9);
 }
 
