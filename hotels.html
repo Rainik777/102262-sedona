@@ -44,15 +44,33 @@
               <div class="hotel-type">
                 <fieldset class="search-infrastructure">
                   <legend>Инфраструктура:</legend>
-                  <label class="form-checkbox" for="pool" title="Наличие бассейна"><input class="visualy-hidden"id="pool" type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>Бассейн</label>
-                  <label class="form-checkbox" for="parking" title="Наличие парковки"><input class="visualy-hidden"id="parking" type="checkbox" name="parking"><span class="checkbox-indicator"></span>Парковка</label>
-                  <label class="form-checkbox" for="wifi" title="Наличие Wi-Fi"><input class="visualy-hidden"id="wifi" type="checkbox" name="wifi"><span class="checkbox-indicator"></span>Wi-Fi</label>
+                  <label class="form-checkbox" for="pool" title="Наличие бассейна">
+                    <input class="visualy-hidden" id="pool" type="checkbox" name="pool" checked>
+                    <span class="checkbox-indicator">Бассейн</span>
+                  </label>
+                  <label class="form-checkbox" for="parking" title="Наличие парковки">
+                    <input class="visualy-hidden" id="parking" type="checkbox" name="parking">
+                    <span class="checkbox-indicator">Парковка</span>
+                  </label>
+                  <label class="form-checkbox" for="wifi" title="Наличие Wi-Fi">
+                    <input class="visualy-hidden" id="wifi" type="checkbox" name="wifi">
+                    <span class="checkbox-indicator">Wi-Fi</span>
+                  </label>
                 </fieldset>
                 <fieldset class="search-housing-type">
                   <legend>Тип жилья:</legend>
-                  <label class="form-checkbox" for="hotel"><input class="visualy-hidden"id="hotel" type="checkbox" name="hotel" checked><span class="checkbox-indicator"></span>Гостиница</label>
-                  <label class="form-checkbox" for="motel"><input class="visualy-hidden"id="motel" type="checkbox" name="motel" checked><span class="checkbox-indicator"></span>Мотель</label>
-                  <label class="form-checkbox" for="appartment"><input class="visualy-hidden"id="appartment" type="checkbox" name="appartment" checked><span class="checkbox-indicator"></span>Апартаменты</label>
+                  <label class="form-checkbox" for="hotel">
+                    <input class="visualy-hidden" id="hotel" type="checkbox" name="hotel" checked>
+                    <span class="checkbox-indicator">Гостиница</span>
+                  </label>
+                  <label class="form-checkbox" for="motel">
+                    <input class="visualy-hidden" id="motel" type="checkbox" name="motel" checked>
+                    <span class="checkbox-indicator">Мотель</span>
+                  </label>
+                  <label class="form-checkbox" for="appartment">
+                    <input class="visualy-hidden" id="appartment" type="checkbox" name="appartment" checked>
+                    <span class="checkbox-indicator">Апартаменты</span>
+                  </label>
                 </fieldset>
               </div>
               <div class="hotel-price">
@@ -64,13 +82,10 @@
                   </p>
 
                   <p class="search-range-immitation">
-                    <button class="button search-minprice" type="button"><span class="disk-indicator"></span><span class="visualy-hidden">Минимальная цена</span></button>
-                    <button class="button search-maxprice" type="button"><span class="disk-indicator"></span><span class="visualy-hidden">Максимальая цена</span></button>
+                    <button class="button search-minprice" type="button"><span class="visualy-hidden">Минимальная цена</span></button>
+                    <button class="button search-maxprice" type="button"><span class="visualy-hidden">Максимальая цена</span></button>
                   </p>            
-                  <!--
-                  <input type="range" id="rangemin" min="0" max="5000" step="1" value="0" onchange="pricemin.value=rangemin.value">
-                  <input type="range" id="rangemax" min="0" max="5000" step="1" value="4000" onchange="pricemax.value=rangemax.value">
-                  -->
+                  
                 </fieldset>
                 <button type="submit" class="form-show button">Показать</button>
               </div>
