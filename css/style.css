@@ -1149,7 +1149,10 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
 }
 
 .up:active polygon,
-.down:active polygon,
+.down:active polygon{
+  fill: #81b3d2;
+}
+
 .current polygon {
   fill: #81b3d2;
 }
