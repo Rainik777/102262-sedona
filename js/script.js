@@ -20,15 +20,19 @@ try {
   isStorageAvailable = false;
 }
 
+  searchform.classList.add("hide-form");
+
 callsearchform.addEventListener("click", function (evt) {
   evt.preventDefault();
   adultammount.value = storageadult;
   childammount.value = storagechild;
-  if (searchform.classList.contains("show-form")) {
-    searchform.classList.remove("show-form");
+  if (searchform.classList.contains("hide-form")) {
+    searchform.classList.remove("hide-form");
+    searchform.classList.add("show-form");
     searchform.classList.remove("form-error");
   } else {
-    searchform.classList.add("show-form");
+    searchform.classList.add("hide-form");
+    searchform.classList.remove("show-form");
   }
 });
 

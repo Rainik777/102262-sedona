@@ -440,28 +440,6 @@ input[type="radio"].visualy-hidden {
   }
 }
 
-@-webkit-keyframes formisalive2 {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
-@keyframes formisalive2 {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
 @-webkit-keyframes shake {
   0%, 100% {
     -webkit-transform: translateX(0);
@@ -501,7 +479,7 @@ input[type="radio"].visualy-hidden {
   position: absolute;
   bottom: -396px;
   left: 315px;
-  z-index: -1;
+  z-index: 1
   min-height: 395px;
   padding: 55px 57px;
   width: 570px;
@@ -516,7 +494,10 @@ input[type="radio"].visualy-hidden {
 .show-form {
   -webkit-animation: formisalive1 0.6s;
           animation: formisalive1 0.6s;
-  z-index: 1
+}
+
+.hide-form {
+  z-index: -1;
 }
 
 .form-error {
@@ -777,8 +758,11 @@ input[type="radio"].visualy-hidden {
 .main-map {
   padding: 0;
   width: 1200px;
+  min-height: 590px;
   margin: 0 auto;
   background-color: aquamarine;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
 }
 
 .main-map iframe {
@@ -1165,51 +1149,12 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
 }
 
 .up:active polygon,
-.down:active polygon {
-  fill: #81b3d2;
-}
-
+.down:active polygon,
 .current polygon {
   fill: #81b3d2;
 }
 
-
-/* .sort-order a.current::after {
-  color: #81b3d2;
-}
-
-a.down::after {
-  content: '▼';
-  color: #cacaca;
-  font-size: 14px;
-}
-
-a.up::after {
-  content: '▲';
-  color: #cacaca;
-  font-size: 14px;
-}
-
-a.down:hover::after,
-a.down:focus::after {
-  color: #000000;
-}
-
-a.up:hover::after,
-a.up:focus::after {
-  color: #000000;
-}
-
-a.down:active::after {
-  color: #81b3d2;
-}
-
-a.up:active::after {
-  color: #81b3d2;
-} */
-
-.nothing-found {
-  
+.nothing-found { 
   width: 1200px;
   margin: 0 auto;
   display: none;
