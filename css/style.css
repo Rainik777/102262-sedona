@@ -36,8 +36,6 @@ input[type="radio"].visualy-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(10%%);
-          clip-path: inset(10%%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -479,7 +477,7 @@ input[type="radio"].visualy-hidden {
   position: absolute;
   bottom: -396px;
   left: 315px;
-  z-index: 1
+  z-index: 1;
   min-height: 395px;
   padding: 55px 57px;
   width: 570px;
