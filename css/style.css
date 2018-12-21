@@ -1134,24 +1134,26 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
   padding-top: 5px;
 }
 
-.up polygon,
-.down polygon {
+.up svg,
+.down svg {
   fill: #cacaca;
 }
 
-.up:not(.current):hover polygon,
-.up:not(.current):focus polygon,
-.down:not(.current):hover polygon,
-.down:not(.current):focus polygon {
+.up svg:hover,
+.up svg:hover,
+.down svg:hover,
+.down svg:hover {
   fill: #000000;
 }
 
-.up:active polygon,
-.down:active polygon{
+.up svg:active,
+.down svg:active {
   fill: #81b3d2;
 }
 
-.current polygon {
+.current svg,
+.current:hover svg,
+.current:focus svg {
   fill: #81b3d2;
 }
 
