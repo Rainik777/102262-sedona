@@ -101,6 +101,10 @@ input[type="radio"].visualy-hidden {
   text-align: right;
 }
 
+.site-navigation li:nth-child(3) {
+  padding-right: 72px;
+}
+
 .site-navigation a {
   color: #000000;
 }
@@ -303,6 +307,11 @@ input[type="radio"].visualy-hidden {
 .advantage-item:nth-child(5) h3,
 .advantage-item:nth-child(6) h3 {
   width: 130px;
+}
+
+.advantage-item:nth-child(6) {
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .other-advantage-item {
@@ -1408,7 +1417,7 @@ input[type="checkbox"]:disabled + .checkbox-indicator::before {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -108px;
+  margin-top: -117px;
   min-height: 120px;
   background-color: rgba( 255, 255, 255, 0.9);
   box-sizing: border-box;
