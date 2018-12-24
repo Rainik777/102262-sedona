@@ -43,42 +43,52 @@
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="hotel-type">
                 <fieldset class="search-infrastructure">
+                  
                   <legend>Инфраструктура:</legend>
-                  <label class="form-checkbox" for="pool" title="Наличие бассейна">
-                    <input class="visualy-hidden" id="pool" type="checkbox" name="pool" checked>
-                    <span class="checkbox-indicator">Бассейн</span>
-                  </label>
-                  <label class="form-checkbox" for="parking" title="Наличие парковки">
-                    <input class="visualy-hidden" id="parking" type="checkbox" name="parking">
-                    <span class="checkbox-indicator">Парковка</span>
-                  </label>
-                  <label class="form-checkbox" for="wifi" title="Наличие Wi-Fi">
-                    <input class="visualy-hidden" id="wifi" type="checkbox" name="wifi">
-                    <span class="checkbox-indicator">Wi-Fi</span>
-                  </label>
+                  <ul class="search-infrastructure-list">
+                    <li>
+                      <input class="visualy-hidden" id="pool" type="checkbox" name="pool" checked>
+                      <label class="checkbox-indicator" for="pool" title="Наличие бассейна">Бассейн</label>
+                    </li>
+                    <li>
+                      <input class="visualy-hidden" id="parking" type="checkbox" name="parking">
+                      <label class="checkbox-indicator" for="parking" title="Наличие парковки">Парковка</label>
+                    </li>
+                    <li>
+                      <input class="visualy-hidden" id="wifi" type="checkbox" name="wifi">
+                      <label class="checkbox-indicator" for="wifi" title="Наличие Wi-Fi">Wi-Fi</label>
+                    </li>
+                  </ul>
                 </fieldset>
+                 
                 <fieldset class="search-housing-type">
+                  
                   <legend>Тип жилья:</legend>
-                  <label class="form-checkbox" for="hotel">
-                    <input class="visualy-hidden" id="hotel" type="checkbox" name="hotel" checked>
-                    <span class="checkbox-indicator">Гостиница</span>
-                  </label>
-                  <label class="form-checkbox" for="motel">
-                    <input class="visualy-hidden" id="motel" type="checkbox" name="motel" checked>
-                    <span class="checkbox-indicator">Мотель</span>
-                  </label>
-                  <label class="form-checkbox" for="appartment">
-                    <input class="visualy-hidden" id="appartment" type="checkbox" name="appartment" checked>
-                    <span class="checkbox-indicator">Апартаменты</span>
-                  </label>
+                  <ul class="search-housing-type-list">
+                    <li>
+                      <input class="visualy-hidden" id="hotel" type="checkbox" name="hotel" checked>
+                      <label class="checkbox-indicator" for="hotel">Гостиница</label>
+                    </li>
+                    <li>
+                      <input class="visualy-hidden" id="motel" type="checkbox" name="motel" checked>
+                      <label class="checkbox-indicator" for="motel">Мотель</label>
+                    </li>
+                    <li>
+                      <input class="visualy-hidden" id="appartment" type="checkbox" name="appartment" checked>
+                      <label class="checkbox-indicator" for="appartment">Апартаменты</label>
+                    </li>
+                  </ul>
                 </fieldset>
+                
               </div>
               <div class="hotel-price">
                 <fieldset class="search-price">
                   <legend>Стоимость в сутки (Р):</legend>
                   <p class="search-price-input">
-                    <input type="number" id="pricemin" placeholder="от 0" title="Стоимость в сутки от" name="pricemin" max="5000" aria-label="Минимальная стоимость в сутки">
-                    <input type="number" id="pricemax" placeholder="до 3000" title="Стоимость в сутки до" name="pricemax" max="5000" aria-label="Максимальная стоимость в сутки">
+                    <label for="pricemin">От</label>
+                    <input type="number" id="pricemin" value="0" title="Стоимость в сутки от" name="pricemin" max="5000" aria-label="Минимальная стоимость в сутки">
+                    <label for="pricemax">До</label>
+                    <input type="number" id="pricemax" value="3000" title="Стоимость в сутки до" name="pricemax" max="5000" aria-label="Максимальная стоимость в сутки">
                   </p>
 
                   <p class="search-range-immitation">
@@ -109,7 +119,8 @@
               </li>
               <li class="sort-item">
                 <a href="#" title="Сортировка по рейтингу">По рейтингу</a>
-              </li>
+              </li> 
+              
             </ul>
             <ul class="sort-order">
               <li class="sort-order-item">
